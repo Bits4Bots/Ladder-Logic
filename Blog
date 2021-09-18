@@ -1,0 +1,49 @@
+In Linear Control Systems Lab the topic of programmable logic controllers was introduced. There is a variety of software available on the web to try PLC yourself, in this blog I used NI Multisim 14.2 
+
+🙋Before arriving to this blog you may have asked yourself...how do I implement a logic circuit using ladders within the Multisim environment? Is there any way to learn about ladder logic using a simulated circuit environment such as Multisim?
+
+The answer:
+
+The Education edition of Multisim lets you capture and simulate Ladder Diagrams. These diagrams are electrically based, as opposed to the binary/digital representations employed by ladder logic. Diagrams of this type are used extensively for industrial motor control circuits.
+
+Ladder Diagrams are able to drive output devices or take input data from regular schematics and embed the instructions on how input states affect output states in either the same schematic or separate hierarchical blocks or subcircuits that contain the Ladder Diagram.
+
+Note: Refer to the Multisim User Guide for a complete description of hierarchical blocks and subcircuits.
+
+📌An example of how to create this ladder logic in Multisim is as follows:
+
+1. Select Place/Ladder Rungs.
+      
+The cursor appears with the rung’s left and right terminators attached.
+
+2. Click to place the first rung and continue clicking and placing until you have placed four rungs as shown below. Right-click to stop placing rungs. 
+
+
+🔍To add components to the rungs:
+1. Select Place/Component, navigate to the Normally Open Relay Contact
+(RELAY_CONTACT_NO) click OK.
+
+Note: This device is found in the Ladder Diagrams Group - Ladder Contacts Family.
+
+2. Drop the relay contact directly onto the first rung.
+
+3. Continue in this manner until all relay contacts have been placed. (X4 must be placed and
+then wired separately). 
+
+4. Place the lamps (Group - Indicators; Family - Lamp).
+
+5. Place relay coils M1 and M2 on the third and fourth rungs (Group - Ladder Diagrams;
+Family - Ladder Relay Coils). 
+
+6. Place switches J1 and J2.
+7. Double-click on each switch, select the Value tab, and change the key for J1 to 1 and the
+key for J2 to 2. 
+
+🔍To change the controlling device reference for X2 and X4:
+1. Double-click on X2 and click the Value tab.
+2. Enter M2 in the Controlling Device Reference field and click OK. Repeat for X4. The completed Ladder Diagram appears as shown below.
+
+Embed the circuit file within a PNG image file using a Multisim Snippet and let your peers drag and drop the circuit into Multisim instead. This tutorial explores the new technology and ways to take advantage of it.
+
+👌 Please try our snippet out for yourself and practice designing logic gates own your own.
+Sharing Multisim circuit files has never been easier. You can now see a graphical preview of the circuit design before opening, and you no longer need to attach and save files on supported web browsers. This saves you valuable time and increases your productivity.
